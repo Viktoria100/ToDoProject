@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 class CreateToDoForm extends Component {
-
   addToDo = () => {
     if (this.inputText.value !== '' && this.inputDate.value) {
       this.props.onAddToDo({
+        id
         text: this.inputText.value,
         endDateTime: this.inputDate.value,
         active: true
