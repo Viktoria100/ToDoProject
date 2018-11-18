@@ -1,32 +1,90 @@
-.App {
+.blurblock{
+  background: inherit;
+  width: 800px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  margin: 100px auto;
+  border-radius: 3%;
+  z-index: 99;
+
+
+
+
+}
+.block{
+  background: rgba(255, 255, 255, 0);
+  width: 800px;
+  height: 450px;
+  overflow: hidden;
+  margin-top: 0px;
+  border-radius: 3%;
+//z-index: 99;
+  position: absolute;
+}
+.addTask{
+  margin-top: 400px;
+  margin-left: 150px;
+}
+.blurblock:before{
+  content: " ";
+  width: 900px;
+  height: 500px;
+  background: inherit;
+  position: absolute;
+  left: -25px;
+  right: 0;
+  top: 0px;
+  bottom: -25px;
+  box-shadow: inset 0 0 0 400px rgba(255, 255, 255, 0.5);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+//z-index: 99;
+}
+.a
+{
+
+  width: 600px;
+  height: 330px;
+  box-sizing: border-box;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0,0);
+  border: 2px dotted black;
+  border-radius: 3%;
+  margin: 60px auto 0px;
+  z-index: 3;
+  padding: 30px;
+  overflow: auto;
+
+}
+.button
+{
+  background-color: rgb(58, 58, 58);
+  height: 30px;
+  width: 80px;
+  border-style: hidden;
+  border-radius: 10%;
+  color: white;
   text-align: center;
 }
+::placeholder
+{
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  padding: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.datetime{
+  width: 120px;
+  font-size: 15px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputText
+{
+  width: 400px;
+  font-size: 15px;
 }

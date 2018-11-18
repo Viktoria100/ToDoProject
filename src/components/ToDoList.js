@@ -9,10 +9,12 @@ class ToDoList extends Component {
 
   render() {
     return (
-      <div className="ToDoItem">
+      <div >
+          <div >
         <ul>
             {this.props.todo.map(item => this.renderToDoItem(item))}
         </ul>
+          </div>
       </div>
     );
   }
